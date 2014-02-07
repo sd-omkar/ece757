@@ -1,0 +1,50 @@
+#OMP_NUM_THREADS=8 ./omp_ocean_stat 4098 4098 100
+
+1024
+Total Execution time: 1538.539 ms
+Total Execution time: 1628.123 ms
+
+512
+Total Execution time: 1112.066 ms
+Total Execution time: 1135.120 ms
+
+256
+Total Execution time: 1112.589 ms
+Total Execution time: 1224.106 ms
+
+128
+Total Execution time: 1210.851 ms
+Total Execution time: 1220.835 ms
+
+64
+Total Execution time: 3258.354 ms
+Total Execution time: 1201.284 ms
+
+32
+Total Execution time: 1236.317 ms
+Total Execution time: 1204.527 ms
+
+16
+Total Execution time: 1263.673 ms
+Total Execution time: 1212.736 ms
+
+8
+Total Execution time: 1291.083 ms
+Total Execution time: 1295.005 ms
+
+4
+Total Execution time: 1270.816 ms
+Total Execution time: 1287.479 ms
+
+2
+Total Execution time: 1450.161 ms
+Total Execution time: 1573.224 ms
+Total Execution time: 1538.836 ms
+Total Execution time: 1490.280 ms
+
+1
+Total Execution time: 1362.060 ms
+Total Execution time: 1698.517 ms
+Total Execution time: 1513.130 ms
+Total Execution time: 1706.833 ms
+

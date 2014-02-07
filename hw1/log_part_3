@@ -1,0 +1,24 @@
+Serial
+Total Execution time: 3448.463 ms
+Total Execution time: 3414.105 ms
+Total Execution time: 3434.095 ms
+
+Dynamic 2
+Total Execution time: 2984.769 ms
+Total Execution time: 2993.259 ms
+Total Execution time: 3093.471 ms
+
+Dynamic 4
+Total Execution time: 1853.817 ms
+Total Execution time: 1858.585 ms
+Total Execution time: 1853.479 ms
+
+Dynamic 8
+Total Execution time: 1215.810 ms
+Total Execution time: 1202.610 ms
+Total Execution time: 1218.160 ms
+
+Dynamic 16
+Total Execution time: 3679.156 ms
+Total Execution time: 3331.204 ms
+Total Execution time: 3184.626 ms
