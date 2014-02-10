@@ -3,7 +3,7 @@
 
 #include "hwtimer.h"
 
-int VERBOSE = 1;
+int VERBOSE = 0;
 
 /* Implement this function in serial_ocean and omp_ocean */
 extern void ocean (float** grid, int xdim, int ydim, int timesteps);
