@@ -1,0 +1,60 @@
+2 4098
+Avg = 49
+Time: 685.228 ms
+Avg = 49
+Time: 684.587 ms
+Avg = 49
+Time: 684.766 ms
+2 8194
+Avg = 31
+Time: 2714.030 ms
+Avg = 31
+Time: 2706.466 ms
+Avg = 31
+Time: 2716.676 ms
+
+4 4098
+Avg = 49
+Time: 366.309 ms
+Avg = 49
+Time: 362.467 ms
+Avg = 49
+Time: 365.128 ms
+4 8194
+Avg = 31
+Time: 1453.233 ms
+Avg = 31
+Time: 1450.185 ms
+Avg = 31
+Time: 1447.113 ms
+
+8 4098
+Avg = 49
+Time: 212.329 ms
+Avg = 49
+Time: 212.304 ms
+Avg = 49
+Time: 212.193 ms
+8 8194
+Avg = 31
+Time: 825.726 ms
+Avg = 31
+Time: 825.894 ms
+Avg = 31
+Time: 826.565 ms
+
+16 4098
+Avg = 49
+Time: 204.686 ms
+Avg = 49
+Time: 204.265 ms
+Avg = 49
+Time: 203.652 ms
+16 8194
+Avg = 31
+Time: 780.283 ms
+Avg = 31
+Time: 775.703 ms
+Avg = 31
+Time: 1152.285 ms
+

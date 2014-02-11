@@ -1,60 +1,60 @@
 2 4098
-Avg = 57
-Time: 2296.532 ms
-Avg = 57
-Time: 2322.116 ms
-Avg = 57
-Time: 2286.941 ms
+Avg = 49
+Time: 2314.734 ms
+Avg = 49
+Time: 2334.806 ms
+Avg = 49
+Time: 2303.913 ms
 2 8194
-Avg = 16
-Time: 9055.270 ms
-Avg = 16
-Time: 9024.089 ms
-Avg = 16
-Time: 9024.115 ms
+Avg = 31
+Time: 9340.085 ms
+Avg = 31
+Time: 9163.365 ms
+Avg = 31
+Time: 9166.079 ms
 
 4 4098
-Avg = 57
-Time: 1153.341 ms
-Avg = 57
-Time: 1155.114 ms
-Avg = 57
-Time: 1155.384 ms
+Avg = 49
+Time: 1177.205 ms
+Avg = 49
+Time: 1197.046 ms
+Avg = 49
+Time: 1178.132 ms
 4 8194
-Avg = 16
-Time: 4599.286 ms
-Avg = 16
-Time: 4716.225 ms
-Avg = 16
-Time: 4709.991 ms
+Avg = 31
+Time: 4738.936 ms
+Avg = 31
+Time: 4749.886 ms
+Avg = 31
+Time: 4697.292 ms
 
 8 4098
-Avg = 57
-Time: 604.286 ms
-Avg = 57
-Time: 611.399 ms
-Avg = 57
-Time: 609.446 ms
+Avg = 49
+Time: 1300.302 ms
+Avg = 49
+Time: 1310.939 ms
+Avg = 49
+Time: 1228.777 ms
 8 8194
-Avg = 16
-Time: 2413.248 ms
-Avg = 16
-Time: 2560.977 ms
-Avg = 16
-Time: 2416.183 ms
+Avg = 31
+Time: 4945.069 ms
+Avg = 31
+Time: 5210.073 ms
+Avg = 31
+Time: 5342.225 ms
 
 16 4098
-Avg = 57
-Time: 598.543 ms
-Avg = 57
-Time: 598.797 ms
-Avg = 57
-Time: 894.803 ms
+Avg = 49
+Time: 1223.646 ms
+Avg = 49
+Time: 1138.359 ms
+Avg = 49
+Time: 1243.105 ms
 16 8194
-Avg = 16
-Time: 2371.146 ms
-Avg = 16
-Time: 3311.143 ms
-Avg = 16
-Time: 2374.370 ms
+Avg = 31
+Time: 4969.143 ms
+Avg = 31
+Time: 4727.611 ms
+Avg = 31
+Time: 4618.405 ms
 

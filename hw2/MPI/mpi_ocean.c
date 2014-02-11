@@ -1,8 +1,11 @@
 #include <mpi.h>
+#include <stdio.h>
 
 extern int VERBOSE;
 
-void ocean (float **grid, int xdim, int ydim, int timesteps, int rank, int size)
+extern void printGrid(int** grid, int xdim, int ydim);
+
+void ocean (int **grid, int xdim, int ydim, int timesteps, int rank, int size)
 {
     /********************* the red-black algortihm (start)************************/
     /*
@@ -20,7 +23,7 @@ void ocean (float **grid, int xdim, int ydim, int timesteps, int rank, int size)
 
   for (int t=0; t < timesteps/2; t++) {
     int flag = 1;
-    int i, j;
+    int i, j, k;
     MPI_Status status;
 
     for (j=1; j < ydim-1; j++) {
@@ -37,6 +40,22 @@ void ocean (float **grid, int xdim, int ydim, int timesteps, int rank, int size)
       }
       flag = (flag == 1 ? 2 : 1);
     }
+
+    /*
+      for(j=1; j<ydim-1; j++)
+        for(i=1;i<xdim-1;i+=1){
+            if(k%2==1){
+                if((i+j)%2==0){
+                    grid[j][i]=(grid[j][i]+grid[j-1][i]+grid[j][i-1]+grid[j][i+1]+grid[j+1][i])/5;                                                  
+                }
+            }
+                else{
+                    if((i+j)%2!=0){
+                        grid[j][i]=(grid[j][i]+grid[j-1][i]+grid[j][i-1]+grid[j][i+1]+grid[j+1][i])/5;                                                  
+                    }
+                }
+          }
+    */
 
     // After every timestep, elements on the boundary need to be updated
     // Send and receive orders need to alternate between partitions to avoid deadlock
@@ -66,5 +85,10 @@ void ocean (float **grid, int xdim, int ydim, int timesteps, int rank, int size)
     }
   }
   
+  if (VERBOSE >= 3) {
+    printf("Rank = %d\n", rank);
+    printGrid(grid, xdim, ydim);
+  }
+
     /////////////////////// the red-black algortihm (end) ///////////////////////////
 }
