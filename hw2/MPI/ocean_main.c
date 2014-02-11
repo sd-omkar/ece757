@@ -4,7 +4,7 @@
 #include "mpi.h"
 
 // Output levels, 1 = Print Avg. and Time, 2 = Print Grid, 3 = Print Partitions
-int VERBOSE = 3;
+int VERBOSE = 1;
 
 /* Implement this function in serial_ocean and omp_ocean */
 extern void ocean (int** grid, int xdim, int ydim, int timesteps, int rank, int size);
@@ -76,13 +76,13 @@ int main(int argc, char* argv[])
       }
       for (i=0; i<ydim; i++) {
         for (j=0; j<xdim; j++) {
-          //grid[i][j] = rand() % 100;
-          //
+          grid[i][j] = rand() % 100;
+          /*
           if (i==0 || j==0 || i==(ydim-1) || j==(xdim-1))
             grid[i][j] = 100;
           else
             grid[i][j] = 0;
-          //
+          */
         }
       }
     }
@@ -97,7 +97,6 @@ int main(int argc, char* argv[])
     }
 
     if (rank == 0) {
-    printf("Grid Before\n");
     printGrid(grid, xdim, ydim);
     }
 
@@ -133,7 +132,6 @@ int main(int argc, char* argv[])
 
     //Calculate average
     if (VERBOSE >= 1 && rank == 0) {
-    printf("Grid After\n");
     printGrid(grid, xdim, ydim);
       float sum = 0;
       for (i=0; i<ydim; i++)

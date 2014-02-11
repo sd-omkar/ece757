@@ -1,0 +1,51 @@
+4098
+Serial
+Total Execution time: 4521.077 ms
+Total Execution time: 4523.012 ms
+Total Execution time: 4521.300 ms
+
+Dynamic 2
+Total Execution time: 3241.845 ms
+Total Execution time: 3254.438 ms
+Total Execution time: 3235.308 ms
+
+Dynamic 4
+Total Execution time: 1841.676 ms
+Total Execution time: 1850.443 ms
+Total Execution time: 1839.463 ms
+
+Dynamic 8
+Total Execution time: 1211.991 ms
+Total Execution time: 1209.352 ms
+Total Execution time: 1212.288 ms
+
+Dynamic 16
+Total Execution time: 3308.965 ms
+Total Execution time: 3500.590 ms
+Total Execution time: 3434.943 ms
+
+8194
+Serial
+Total Execution time: 18076.707 ms
+Total Execution time: 18077.945 ms
+Total Execution time: 18082.145 ms
+
+Dynamic 2
+Total Execution time: 11834.020 ms
+Total Execution time: 11904.692 ms
+Total Execution time: 11883.665 ms
+
+Dynamic 4
+Total Execution time: 7020.773 ms
+Total Execution time: 7019.122 ms
+Total Execution time: 7020.539 ms
+
+Dynamic 8
+Total Execution time: 4722.449 ms
+Total Execution time: 4728.748 ms
+Total Execution time: 4721.882 ms
+
+Dynamic 16
+Total Execution time: 6229.092 ms
+Total Execution time: 6178.226 ms
+Total Execution time: 6373.897 ms
