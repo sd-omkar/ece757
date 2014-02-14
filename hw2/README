@@ -1,0 +1,21 @@
+HOMEWORK 2
+
+Chetan Patil 	907 003 7685
+Omkar Deshmukh  906 979 8065
+
+1) Directions for compiling the code: 
+
+"make" in the respective directories compiles the pthreads and MPI executables
+	- pthreads_ocean
+        - mpi_ocean
+
+2) Directions for running the code: 
+
+Pthreads:
+The program takes 4 arguments: xdim, ydim, number of timesteps, and number of threads. It can be run as below:
+ 	./pthreads_ocean <xdim> <ydim> <timesteps> <num of threads>
+
+MPI:
+The program takes 3 arguments: xdim, ydim, number of timesteps. This needs to be run with mpiexec as shown below:
+        mpiexec -n <no. of cores> ./mpi_ocean <xdim> <ydim> <timesteps>
+
