@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+#low contention:  -n2 -q90 -u98 -r1048576 -t4194304
+#high contention: -n4 -q60 -u90 -r1048576 -t4194304
+
+for i in 1 2 4 8 16
+do
+  echo $i
+  ../../pcm-tsx.x "./vacation.rtm -c$i -n2 -q90 -u98 -r1048576 -t4194304" >> log/scaling_rtm_low
+  ../../pcm-tsx.x "./vacation.rtm -c$i -n4 -q60 -u90 -r1048576 -t4194304" >> log/scaling_rtm_high
+done

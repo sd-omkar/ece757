@@ -1,0 +1,50 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+Number of PCM instances: 2
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c8 -n4 -q60 -u90 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 8
+    Transactions/client = 524288
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 8
+Running clients... Exit code: 134
+
+Time elapsed: 10568 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.67         13 G       20 G        56 M ( 0.27%)         52 M ( 0.26%)   69 M     47 M       0  
+   1   0.69         14 G       21 G        79 M ( 0.37%)         76 M ( 0.36%)   67 M     51 M       0  
+   2   0.70         14 G       20 G        59 M ( 0.29%)         55 M ( 0.27%)   64 M     47 M       0  
+   3   0.67         14 G       21 G        57 M ( 0.27%)         54 M ( 0.26%)   68 M     48 M       0  
+   4   0.64         13 G       20 G        54 M ( 0.26%)         51 M ( 0.25%)   74 M     43 M       0  
+   5   0.67         13 G       20 G        77 M ( 0.37%)         74 M ( 0.36%)   69 M     45 M       0  
+   6   0.66         13 G       20 G        54 M ( 0.27%)         51 M ( 0.26%)   69 M     43 M       0  
+   7   0.47         13 G       28 G        62 M ( 0.22%)         59 M ( 0.21%)   98 M     63 M       0  
+-------------------------------------------------------------------------------------------------------------------
+   *   0.64        111 G      174 G       501 M ( 0.29%)        477 M ( 0.27%)  582 M    391 M       0  
+
+Cleaning up

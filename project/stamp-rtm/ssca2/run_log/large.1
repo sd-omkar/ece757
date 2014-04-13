@@ -1,0 +1,296 @@
+=============================
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./ssca2.rtm -s20 -i1.0 -u1.0 -l9 -p9 -t 1" command:
+
+
+HPCS SSCA #2 Graph Analysis Executable Specification:
+Running...
+
+
+Number of processors:       1
+Problem Scale:              20
+Max parallel edges:         9
+Percent int weights:        0.600000
+Probability unidirectional: 1.000000
+Probability inter-clique:   1.000000
+Subgraph edge length:       9
+Kernel 3 data structure:    2
+
+
+Scalable Data Generator - genScalData() beginning execution...
+Finished generating edges
+No. of intra-clique edges - 22043427
+No. of inter-clique edges - 2225044
+Total no. of edges        - 24268471
+
+Time taken for Scalable Data Generation is  3.964816 sec.
+
+
+	genScalData() completed execution.
+
+Kernel 1 - computeGraph() beginning execution...
+
+	computeGraph() completed execution.
+
+Time taken for kernel 1 is  3.981147 sec.
+
+Time taken for all is  7.945963 sec.
+
+Exit code: 0
+
+Time elapsed: 7950 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.17        131 M      770 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.22         32 M      145 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.59       6699 K       11 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.20        763 K     3805 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.04        719 K       16 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   0.34       3098 K     9193 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.29        623 K     2174 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   1.07         33 G       30 G      5913 M (19.08%)       1371 K ( 0.00%)   22 M      0       264  
+-------------------------------------------------------------------------------------------------------------------
+   *   1.04         33 G       31 G      5913 M (18.51%)       1371 K ( 0.00%)   22 M      0       264  
+
+Cleaning up
+=============================
+=============================
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./ssca2.rtm -s20 -i1.0 -u1.0 -l9 -p9 -t 2" command:
+
+
+HPCS SSCA #2 Graph Analysis Executable Specification:
+Running...
+
+
+Number of processors:       2
+Problem Scale:              20
+Max parallel edges:         9
+Percent int weights:        0.600000
+Probability unidirectional: 1.000000
+Probability inter-clique:   1.000000
+Subgraph edge length:       9
+Kernel 3 data structure:    2
+
+
+Scalable Data Generator - genScalData() beginning execution...
+Finished generating edges
+No. of intra-clique edges - 22043427
+No. of inter-clique edges - 2225044
+Total no. of edges        - 24268471
+
+Time taken for Scalable Data Generation is  4.002216 sec.
+
+
+	genScalData() completed execution.
+
+Kernel 1 - computeGraph() beginning execution...
+
+	computeGraph() completed execution.
+
+Time taken for kernel 1 is  2.240035 sec.
+
+Time taken for all is  6.242251 sec.
+
+Exit code: 0
+
+Time elapsed: 6247 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.17        102 M      610 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.22         30 M      140 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   1.18         23 G       19 G      2915 M (14.65%)       1313 K ( 0.01%)   11 M      0       260  
+   3   0.04       1358 K       36 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.48         12 M       25 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   0.33       3034 K     9333 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   1.69       6969 M     4131 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.32       2727 M     8464 M      2970 M (35.09%)       1336 K ( 0.02%)   11 M      0       265  
+-------------------------------------------------------------------------------------------------------------------
+   *   1.00         33 G       33 G      5885 M (17.66%)       2650 K ( 0.01%)   22 M      0       262  
+
+Cleaning up
+=============================
+=============================
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./ssca2.rtm -s20 -i1.0 -u1.0 -l9 -p9 -t 4" command:
+
+
+HPCS SSCA #2 Graph Analysis Executable Specification:
+Running...
+
+
+Number of processors:       4
+Problem Scale:              20
+Max parallel edges:         9
+Percent int weights:        0.600000
+Probability unidirectional: 1.000000
+Probability inter-clique:   1.000000
+Subgraph edge length:       9
+Kernel 3 data structure:    2
+
+
+Scalable Data Generator - genScalData() beginning execution...
+Finished generating edges
+No. of intra-clique edges - 22043427
+No. of inter-clique edges - 2225044
+Total no. of edges        - 24268471
+
+Time taken for Scalable Data Generation is  3.964223 sec.
+
+
+	genScalData() completed execution.
+
+Kernel 1 - computeGraph() beginning execution...
+
+	computeGraph() completed execution.
+
+Time taken for kernel 1 is  1.343224 sec.
+
+Time taken for all is  5.307447 sec.
+
+Exit code: 0
+
+Time elapsed: 5311 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.17         82 M      482 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.22         24 M      110 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.31       1602 K     5197 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.12        435 K     3685 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.30       1423 M     4802 M      1590 M (33.13%)       2447 K ( 0.05%) 5599 K      0       284  
+   5   0.31       1492 M     4843 M      1590 M (32.84%)       2245 K ( 0.05%) 5603 K      0       283  
+   6   1.44         29 G       20 G      1588 M ( 7.86%)       1572 K ( 0.01%) 5595 K      0       283  
+   7   0.28       1362 M     4902 M      1460 M (29.78%)       1292 K ( 0.03%) 5598 K      0       260  
+-------------------------------------------------------------------------------------------------------------------
+   *   0.95         33 G       35 G      6230 M (17.61%)       7558 K ( 0.02%)   22 M      0       278  
+
+Cleaning up
+=============================
+=============================
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./ssca2.rtm -s20 -i1.0 -u1.0 -l9 -p9 -t 8" command:
+
+
+HPCS SSCA #2 Graph Analysis Executable Specification:
+Running...
+
+
+Number of processors:       8
+Problem Scale:              20
+Max parallel edges:         9
+Percent int weights:        0.600000
+Probability unidirectional: 1.000000
+Probability inter-clique:   1.000000
+Subgraph edge length:       9
+Kernel 3 data structure:    2
+
+
+Scalable Data Generator - genScalData() beginning execution...
+Finished generating edges
+No. of intra-clique edges - 22043427
+No. of inter-clique edges - 2225044
+Total no. of edges        - 24268471
+
+Time taken for Scalable Data Generation is  3.965753 sec.
+
+
+	genScalData() completed execution.
+
+Kernel 1 - computeGraph() beginning execution...
+
+	computeGraph() completed execution.
+
+Time taken for kernel 1 is  1.192237 sec.
+
+Time taken for all is  5.157990 sec.
+
+Exit code: 0
+
+Time elapsed: 5162 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.18        812 M     4587 M      1243 M (27.10%)         57 M ( 1.24%) 2859 K      0       434  
+   1   0.16        666 M     4113 M      1218 M (29.62%)         36 M ( 0.88%) 2826 K      0       431  
+   2   0.20        851 M     4299 M      1222 M (28.44%)         36 M ( 0.86%) 2831 K      0       431  
+   3   0.19        837 M     4298 M      1231 M (28.66%)         37 M ( 0.88%) 2836 K      0       434  
+   4   0.18        774 M     4233 M      1246 M (29.44%)         57 M ( 1.36%) 2853 K      0       436  
+   5   0.18        733 M     4134 M      1219 M (29.49%)         36 M ( 0.89%) 2826 K      0       431  
+   6   1.45         28 G       19 G      1223 M ( 6.20%)         37 M ( 0.19%) 2830 K      0       432  
+   7   0.17        684 M     4099 M      1232 M (30.07%)         37 M ( 0.91%) 2832 K      0       435  
+-------------------------------------------------------------------------------------------------------------------
+   *   0.69         34 G       49 G      9838 M (19.88%)        337 M ( 0.68%)   22 M      0       433  
+
+Cleaning up
+=============================

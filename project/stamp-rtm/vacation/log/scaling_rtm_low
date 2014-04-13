@@ -1,0 +1,261 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c1 -n2 -q90 -u98 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 1
+    Transactions/client = 4194304
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 1
+Running clients... done.
+Time = 31.887865
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 46372 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   1.25        663 M      530 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.76         68 M       89 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.79         37 M       47 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.46         10 M       22 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.53        100 M      191 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   2.31        351 M      152 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.59         21 G       37 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.43       4187 K     9626 K         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+-------------------------------------------------------------------------------------------------------------------
+   *   0.61         23 G       38 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+
+Cleaning up
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c2 -n2 -q90 -u98 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 2
+    Transactions/client = 2097152
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 2
+Running clients... done.
+Time = 16.646794
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 31391 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.45        157 M      351 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.59         45 M       77 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.66         45 M       67 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.44         34 M       78 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.61        152 M      249 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   0.80         51 M       63 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.63         15 G       25 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.47       6204 M       13 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+-------------------------------------------------------------------------------------------------------------------
+   *   0.57         22 G       39 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+
+Cleaning up
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c4 -n2 -q90 -u98 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 4
+    Transactions/client = 1048576
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 4
+Running clients... done.
+Time = 8.350212
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 23017 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.60       4330 M     7268 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.49       3266 M     6734 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.93         73 M       78 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   1.98        698 M      352 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   1.32        793 M      602 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   1.09        256 M      236 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.70         12 G       18 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.59       4397 M     7511 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+-------------------------------------------------------------------------------------------------------------------
+   *   0.65         26 G       41 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+
+Cleaning up
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c8 -n2 -q90 -u98 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 8
+    Transactions/client = 524288
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 8
+Running clients... done.
+Time = 5.260148
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 19781 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.38       1584 M     4174 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.41       1792 M     4331 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.38       1572 M     4156 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.38       1575 M     4196 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.38       1581 M     4172 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   0.38       1584 M     4145 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.71         11 G       15 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.38       1563 M     4165 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+-------------------------------------------------------------------------------------------------------------------
+   *   0.50         22 G       44 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+
+Cleaning up
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "./vacation.rtm -c16 -n2 -q90 -u98 -r1048576 -t4194304" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 16
+    Transactions/client = 262144
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 16
+Running clients... Exit code: 134
+
+Time elapsed: 23443 ms
+Core | IPC  | Instructions | Cycles  | Transactional Cycles | Aborted Cycles  | #RTM  | #HLE  | Cycles/Transaction 
+   0   0.59       3197 M     5395 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   1   0.50       1568 M     3127 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   2   0.48       1313 M     2735 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   3   0.46       1211 M     2614 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   4   0.46       1302 M     2815 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   5   0.41       1008 M     2477 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   6   0.61       6656 M       10 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+   7   0.80       3423 M     4284 M         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+-------------------------------------------------------------------------------------------------------------------
+   *   0.57         19 G       34 G         0   ( 0.00%)          0   ( 0.00%)    0        0       N/A
+
+Cleaning up
