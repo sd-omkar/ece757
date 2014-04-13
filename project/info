@@ -1,0 +1,1 @@
+getconf LEVEL1_DCACHE_LINESIZE
