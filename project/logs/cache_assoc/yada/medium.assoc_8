@@ -1,0 +1,61 @@
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 12.948
+Final mesh size                 = 38772
+Number of elements processed    = 9355
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 4.352
+Final mesh size                 = 38866
+Number of elements processed    = 10666
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 4.799
+Final mesh size                 = 38905
+Number of elements processed    = 11229
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation...=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 5.261
+Final mesh size                 = 38968
+Number of elements processed    = 11847
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 5.218
+Final mesh size                 = 38926
+Number of elements processed    = 11859
+Final mesh is valid.
+=============================

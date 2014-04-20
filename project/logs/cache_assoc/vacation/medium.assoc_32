@@ -1,0 +1,102 @@
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 1
+    Transactions/client = 4096
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 1
+Running clients... done.
+Time = 0.445421
+Checking tables... done.
+Deallocating memory... done.
+=============================
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 2
+    Transactions/client = 2048
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 2
+Running clients... done.
+Time = 0.306631
+Checking tables... done.
+Deallocating memory... done.
+=============================
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 4
+    Transactions/client = 1024
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 4
+Running clients... done.
+Time = 0.259924
+Checking tables... done.
+Deallocating memory... done.
+=============================
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 8
+    Transactions/client = 512
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 8
+Running clients... done.
+Time = 0.235029
+Checking tables... done.
+Deallocating memory... done.
+=============================
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 16
+    Transactions/client = 256
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 16
+Running clients... done.
+Time = 0.259003
+Checking tables... done.
+Deallocating memory... done.
+=============================
+=============================
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4096
+    Clients             = 32
+    Transactions/client = 128
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 32
+Running clients... done.
+Time = 0.251252
+Checking tables... done.
+Deallocating memory... done.
+=============================

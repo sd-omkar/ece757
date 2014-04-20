@@ -1,0 +1,102 @@
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 26.155964
+Learning structure...done.
+Learn time = 1.252444
+Learn score  = -71743.632812
+Actual score = -71673.085938
+=============================
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 28.115775
+Learning structure...done.
+Learn time = 0.657525
+Learn score  = -71720.789062
+Actual score = -71673.085938
+=============================
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 28.139908
+Learning structure...done.
+Learn time = 0.626583
+Learn score  = -71738.265625
+Actual score = -71673.085938
+=============================
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 28.169895
+Learning structure...done.
+Learn time = 0.647670
+Learn score  = -71739.109375
+Actual score = -71673.085938
+=============================
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 28.427953
+Learning structure...done.
+Learn time = 0.619712
+Learn score  = -71748.468750
+Actual score = -71673.085938
+=============================
+=============================
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 2
+% chance of parent         = 20
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 28.200970
+Learning structure...done.
+Learn time = 0.633787
+Learn score  = -71884.210938
+Actual score = -71673.085938
+=============================

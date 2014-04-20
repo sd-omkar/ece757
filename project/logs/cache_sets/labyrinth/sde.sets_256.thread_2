@@ -1,0 +1,244 @@
+# LIST OF RTM COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------- 
+# TID   OS TID      XBEGIN        XEND      XABORT  GENERAL ABORTS  CONTENTION ABORTS
+    0     2606         131          34           0              66                 31 
+    1     2609         130          34           0              63                 33 
+  TOTAL                261          68           0             129                 64 
+
+
+# LIST OF HLE COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID  OS TID  XACQUIRE  SPECULATIVE  NON SPECULATIVE  GENERAL ABORTS  CONTENTION ABORTS  ELISION CACHE FULL  HLE IN RTM
+    0    2606         0            0                0               0                  0                   0           0 
+    1    2609         0            0                0               0                  0                   0           0 
+  TOTAL               0            0                0               0                  0                   0           0 
+
+
+# COUNTERS OF TSX ABORTS PER ABORT REASON 
+#----------------------------------------------------------------------------- 
+# REASON                         RTM ABORTS   HLE ABORTS
+  ABORT_CONTENTION                       64            0 
+  CACHE_SET_FULL                        129            0 
+
+
+
+# TOP 10 GENERAL ABORTS 
+#---------------------------------------------------------------------------
+#               IP    COUNT    INSTRUCTION DISASSEMBLY
+0x000000000043b30b       66    prefetcht0 zmmword ptr [rdi+0x340]
+0x000000000043b2b9       63    prefetcht0 zmmword ptr [rsi+0x3c0]
+
+
+
+# TOP 10 CONTENTION ABORTS 
+#---------------------------------------------------------------------------
+#               IP    COUNT    INSTRUCTION DISASSEMBLY
+0x000000000043b2b9       32    prefetcht0 zmmword ptr [rsi+0x3c0]
+0x000000000043b2b2       30    prefetcht0 zmmword ptr [rsi+0x380]
+0x0000000000400c04        1    mov rax, qword ptr [rsi]
+0x0000000000400e48        1    mov qword ptr [rax], 0xfffffffffffffffe
+
+
+
+#LIST OF TSX GENERAL ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID                 IP       DATA ADDRESS       LOCK ADDRESS   TSX TYPE                         REASON  
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    0 0x000000000043b30b 0x000000000159b660                N/A        RTM                 CACHE_SET_FULL 
+    1 0x000000000043b2b9 0x0000000001584a80                N/A        RTM                 CACHE_SET_FULL 
+
+
+
+#LIST OF TSX CONTENTION ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID     TRANSACTION IP   KILLER TID          KILLER IP   KILLER DATA ADDRESS  INSIDE TSX       LOCK ADDRESS  TSX TYPE
+    1 0x0000000000401ef0            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    0 0x0000000000401ef0            1 0x000000000043b2b9    0x000000000158f380          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401ed8            0 0x000000000043b2b2    0x0000000001588540          NO                N/A       RTM 
+    0 0x0000000000401ed8            1 0x000000000043b2b2    0x000000000158f340          NO                N/A       RTM 
+    1 0x0000000000401a58            0 0x000000000043b2b9    0x0000000001588500          NO                N/A       RTM 
+    1 0x0000000000401ed8            0 0x0000000000400e48    0x000000000157d7b8          NO                N/A       RTM 
+    0 0x00000000004026fc            1 0x0000000000400c04    0x0000000001574ff0          NO                N/A       RTM 

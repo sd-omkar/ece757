@@ -1,0 +1,66 @@
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 4.380
+Final mesh size                 = 38772
+Number of elements processed    = 9355
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 3.920
+Final mesh size                 = 38868
+Number of elements processed    = 10344
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 4.217
+Final mesh size                 = 38924
+Number of elements processed    = 11036
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 6.300
+Final mesh size                 = 38740
+Number of elements processed    = 11187
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 6.135
+Final mesh size                 = 38848
+Number of elements processed    = 11483
+Final mesh is valid.
+=============================
+=============================
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 4.834
+Final mesh size                 = 38948
+Number of elements processed    = 11789
+Final mesh is valid.
+=============================

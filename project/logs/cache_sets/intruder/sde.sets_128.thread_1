@@ -1,0 +1,54 @@
+# LIST OF RTM COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------- 
+# TID   OS TID      XBEGIN        XEND      XABORT  GENERAL ABORTS  CONTENTION ABORTS
+    0     1668       54929       54914           0              15                  0 
+  TOTAL              54929       54914           0              15                  0 
+
+
+# LIST OF HLE COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID  OS TID  XACQUIRE  SPECULATIVE  NON SPECULATIVE  GENERAL ABORTS  CONTENTION ABORTS  ELISION CACHE FULL  HLE IN RTM
+    0    1668         0            0                0               0                  0                   0           0 
+  TOTAL               0            0                0               0                  0                   0           0 
+
+
+# COUNTERS OF TSX ABORTS PER ABORT REASON 
+#----------------------------------------------------------------------------- 
+# REASON                         RTM ABORTS   HLE ABORTS
+  CACHE_SET_FULL                          3            0 
+  UNFRIENDLY_INST                        12            0 
+
+
+
+# TOP 10 GENERAL ABORTS 
+#---------------------------------------------------------------------------
+#               IP    COUNT    INSTRUCTION DISASSEMBLY
+0x0000000000477ba8       12    syscall 
+0x00000000004286f5        3    mov r13, qword ptr [r12+0x8]
+
+
+
+#LIST OF TSX GENERAL ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID                 IP       DATA ADDRESS       LOCK ADDRESS   TSX TYPE                         REASON  
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x0000000000477ba8 0x0000000000000000                N/A        RTM                UNFRIENDLY_INST 
+    0 0x00000000004286f5 0x00000000022c9ec8                N/A        RTM                 CACHE_SET_FULL 
+    0 0x00000000004286f5 0x00000000022c9ec8                N/A        RTM                 CACHE_SET_FULL 
+    0 0x00000000004286f5 0x00000000022c9ec8                N/A        RTM                 CACHE_SET_FULL 
+
+
+
+#LIST OF TSX CONTENTION ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID     TRANSACTION IP   KILLER TID          KILLER IP   KILLER DATA ADDRESS  INSIDE TSX       LOCK ADDRESS  TSX TYPE

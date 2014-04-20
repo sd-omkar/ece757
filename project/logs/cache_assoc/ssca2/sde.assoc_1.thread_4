@@ -1,0 +1,94 @@
+# LIST OF RTM COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------- 
+# TID   OS TID      XBEGIN        XEND      XABORT  GENERAL ABORTS  CONTENTION ABORTS
+    0    27237     1066392           2           0         1066389                  1 
+    1    27240      400494      333053           0           67437                  4 
+    2    27241      399495      331784           0           67701                 10 
+    3    27242      398502      331166           0           67332                  4 
+  TOTAL            2264883      996005           0         1268859                 19 
+
+
+# LIST OF HLE COUNTERS DATA PER THREAD 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID  OS TID  XACQUIRE  SPECULATIVE  NON SPECULATIVE  GENERAL ABORTS  CONTENTION ABORTS  ELISION CACHE FULL  HLE IN RTM
+    0   27237         0            0                0               0                  0                   0           0 
+    1   27240         0            0                0               0                  0                   0           0 
+    2   27241         0            0                0               0                  0                   0           0 
+    3   27242         0            0                0               0                  0                   0           0 
+  TOTAL               0            0                0               0                  0                   0           0 
+
+
+# COUNTERS OF TSX ABORTS PER ABORT REASON 
+#----------------------------------------------------------------------------- 
+# REASON                         RTM ABORTS   HLE ABORTS
+  ABORT_CONTENTION                       19            0 
+  CACHE_SET_FULL                    1268859            0 
+
+
+
+* Number of abort events exceeded the limit of 1000000
+
+
+# TOP 10 GENERAL ABORTS 
+#---------------------------------------------------------------------------
+#               IP    COUNT    INSTRUCTION DISASSEMBLY
+0x0000000000402f86   822073    mov rsi, qword ptr [rsp+0x10]
+0x0000000000402f6c    62709    mov rax, qword ptr [r9]
+0x0000000000402f76    61638    mov rcx, qword ptr [rip+0x2d6803]
+0x0000000000402f91    53580    mov qword ptr [rsi+rax*8], r13
+
+
+
+# TOP 10 CONTENTION ABORTS 
+#---------------------------------------------------------------------------
+#               IP    COUNT    INSTRUCTION DISASSEMBLY
+0x0000000000402f68        6    add r9, qword ptr [r14+0x50]
+0x0000000000402f73        4    mov qword ptr [r9], rdx
+0x0000000000402f6c        3    mov rax, qword ptr [r9]
+0x0000000000402a18        2    add qword ptr [rip+0x2cf901], r15
+0x0000000000402f91        2    mov qword ptr [rsi+rax*8], r13
+0x0000000000402f86        1    mov rsi, qword ptr [rsp+0x10]
+0x0000000000402f9a        1    mov r11, qword ptr [r14+0x30]
+
+
+
+#LIST OF TSX GENERAL ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID                 IP       DATA ADDRESS       LOCK ADDRESS   TSX TYPE                         REASON  
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    1 0x0000000000402f6c 0x0000000003cd0ea0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+    0 0x0000000000402f86 0x00007fff93b79eb0                N/A        RTM                 CACHE_SET_FULL 
+
+
+
+#LIST OF TSX CONTENTION ABORT EVENTS 
+#--------------------------------------------------------------------------------------------------------------------------
+# TID     TRANSACTION IP   KILLER TID          KILLER IP   KILLER DATA ADDRESS  INSIDE TSX       LOCK ADDRESS  TSX TYPE
+    0 0x0000000000402a12            1 0x0000000000402a18    0x00000000006d2320         YES                N/A       RTM 
+    1 0x0000000000402a12            2 0x0000000000402a18    0x00000000006d2320         YES                N/A       RTM 
+    2 0x0000000000402f58            1 0x0000000000402f68    0x00000000024c4eb0         YES                N/A       RTM 
+    2 0x0000000000402fb0            1 0x0000000000402f68    0x00000000024c4eb0          NO                N/A       RTM 
+    2 0x0000000000402fc0            3 0x0000000000402f68    0x00000000024c4eb0         YES                N/A       RTM 
+    2 0x0000000000402f58            1 0x0000000000402f6c    0x0000000003cd44f8         YES                N/A       RTM 
+    2 0x0000000000402fb0            1 0x0000000000402f73    0x0000000003cd44f8         YES                N/A       RTM 
+    1 0x0000000000402f58            2 0x0000000000402f6c    0x0000000003cd44f0         YES                N/A       RTM 
+    2 0x0000000000402f58            1 0x0000000000402f9a    0x00000000024c4e90          NO                N/A       RTM 
+    3 0x0000000000402f58            1 0x0000000000402f68    0x00000000024c4eb0         YES                N/A       RTM 
+    3 0x0000000000402fb0            1 0x0000000000402f68    0x00000000024c4eb0         YES                N/A       RTM 
+    1 0x0000000000402f58            3 0x0000000000402f73    0x0000000003cc4f08         YES                N/A       RTM 
+    3 0x0000000000402fc0            1 0x0000000000402f68    0x00000000024c4eb0         YES                N/A       RTM 
+    2 0x0000000000402f58            3 0x0000000000402f73    0x0000000003d2da08         YES                N/A       RTM 
+    3 0x0000000000402f58            2 0x0000000000402f86    0x00007f360a24acd0         YES                N/A       RTM 
+    2 0x0000000000402fb0            3 0x0000000000402f73    0x0000000003d2da08         YES                N/A       RTM 
+    2 0x0000000000402f58            1 0x0000000000402f91    0x00007f3607a0cd20         YES                N/A       RTM 
+    1 0x0000000000402f58            2 0x0000000000402f6c    0x0000000003d6b660         YES                N/A       RTM 
+    2 0x0000000000402fb0            1 0x0000000000402f91    0x00007f3607a0cd20         YES                N/A       RTM 

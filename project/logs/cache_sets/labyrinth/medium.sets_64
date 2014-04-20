@@ -1,0 +1,42 @@
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 64
+Elapsed time    = 0.399629 seconds
+Verification passed.
+=============================
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 64
+Elapsed time    = 0.412069 seconds
+Verification passed.
+=============================
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 64
+Elapsed time    = 0.416681 seconds
+Verification passed.
+=============================
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 64
+Elapsed time    = 0.399737 seconds
+Verification passed.
+=============================
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 64
+Elapsed time    = 0.424990 seconds
+Verification passed.
+=============================
+=============================
+Maze dimensions = 64 x 64 x 3
+Paths to route  = 64
+Paths routed    = 63
+Elapsed time    = 0.427401 seconds
+Verification passed.
+=============================
