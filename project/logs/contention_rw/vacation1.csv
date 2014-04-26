@@ -1,0 +1,56 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "vacation/vacation.rtm -n2 -q90 -u98 -r1048576 -t4194304 -c8" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 8
+    Transactions/client = 524288
+    Queries/transaction = 2
+    Relations           = 1048576
+    Query percent       = 90
+    Query range         = 943718
+    Percent user        = 98
+numThread = 8
+Running clients... done.
+Time = 4.638092
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 8715 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,833100,218542,51960,0,
+1,845153,222625,46497,0,
+2,827677,224030,49868,0,
+3,828713,217457,50604,0,
+4,813717,211252,52792,0,
+5,823414,214697,47995,0,
+6,799946,211998,40333,0,
+7,806938,209709,55847,0,
+*,6578658,1730310,395896,0,
+
+Cleaning up

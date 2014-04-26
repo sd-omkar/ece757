@@ -1,0 +1,56 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "vacation/vacation.rtm -n4 -q60 -u90 -r1048576 -t4194304 -c8" command:
+
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 4194304
+    Clients             = 8
+    Transactions/client = 524288
+    Queries/transaction = 4
+    Relations           = 1048576
+    Query percent       = 60
+    Query range         = 629146
+    Percent user        = 90
+numThread = 8
+Running clients... done.
+Time = 7.235993
+Checking tables... done.
+Deallocating memory... done.
+Exit code: 0
+
+Time elapsed: 11287 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,853387,238899,33223,0,
+1,878606,242939,32216,0,
+2,848841,240141,33966,0,
+3,839889,237512,34776,0,
+4,823090,52613,39552,0,
+5,833311,49018,35555,0,
+6,826087,24662,38184,0,
+7,798926,22883,42478,0,
+*,6702137,1108667,289950,0,
+
+Cleaning up

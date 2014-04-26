@@ -1,0 +1,45 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "genome/genome.rtm -g16384 -s64 -n16777216 -t8" command:
+
+Creating gene and segments... done.
+Gene length     = 16384
+Segment length  = 64
+Number segments = 16777216
+Sequencing gene... Exit code: 2
+
+Time elapsed: 469172 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,229123,1022,32969,0,
+1,207417,1951,30311,0,
+2,222504,1020,30546,0,
+3,225018,2037,33827,0,
+4,234596,6544,34037,0,
+5,198395,5964,31391,0,
+6,219487,5768,32332,0,
+7,220846,6160,38985,0,
+*,1757386,30466,264398,0,
+
+Cleaning up

@@ -1,0 +1,75 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "ssca2/ssca2.rtm -s20 -i1.0 -u1.0 -l9 -p9 -t8" command:
+
+
+HPCS SSCA #2 Graph Analysis Executable Specification:
+Running...
+
+
+Number of processors:       8
+Problem Scale:              20
+Max parallel edges:         9
+Percent int weights:        0.600000
+Probability unidirectional: 1.000000
+Probability inter-clique:   1.000000
+Subgraph edge length:       9
+Kernel 3 data structure:    2
+
+
+Scalable Data Generator - genScalData() beginning execution...
+Finished generating edges
+No. of intra-clique edges - 22043427
+No. of inter-clique edges - 2225044
+Total no. of edges        - 24268471
+
+Time taken for Scalable Data Generation is  3.966313 sec.
+
+
+	genScalData() completed execution.
+
+Kernel 1 - computeGraph() beginning execution...
+
+	computeGraph() completed execution.
+
+Time taken for kernel 1 is  1.194062 sec.
+
+Time taken for all is  5.160375 sec.
+
+Exit code: 0
+
+Time elapsed: 5166 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,71214,1710,2,0,
+1,62985,2068,7,0,
+2,62902,1564,4,0,
+3,63886,1325,3,0,
+4,71189,1259,5,0,
+5,62489,1264,1,0,
+6,62666,1323,2,0,
+7,64373,1245,4,0,
+*,521704,11758,28,0,
+
+Cleaning up

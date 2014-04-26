@@ -1,0 +1,50 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "yada/yada.rtm -a20 -i yada/inputs/ttimeu10000.2 -t8" command:
+
+Angle constraint = 20.000000
+Reading input... done.
+Initial number of mesh elements = 19998
+Initial number of bad elements  = 4897
+Starting triangulation... done.
+Elapsed time                    = 0.152
+Final mesh size                 = 38860
+Number of elements processed    = 11500
+Final mesh is valid.
+Exit code: 0
+
+Time elapsed: 210 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,5482,3332,1329,0,
+1,4770,3215,1030,0,
+2,4076,2776,918,0,
+3,4315,3363,816,0,
+4,5255,3184,1200,0,
+5,4361,2896,961,0,
+6,3987,2775,861,0,
+7,2578,1785,558,0,
+*,34824,23326,7673,0,
+
+Cleaning up

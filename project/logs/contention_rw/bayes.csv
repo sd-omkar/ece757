@@ -1,0 +1,56 @@
+
+ Intel(r) Performance Counter Monitor: Intel(r) Transactional Synchronization Extensions Monitoring Utility 
+
+ Copyright (c) 2013 Intel Corporation
+
+Number of physical cores: 4
+Number of logical cores: 8
+Threads (logical cores) per physical core: 2
+Num sockets: 1
+Core PMU (perfmon) version: 3
+Number of core PMU generic (programmable) counters: 4
+Width of generic (programmable) counters: 48 bits
+Number of core PMU fixed counters: 3
+Width of fixed counters: 48 bits
+Nominal core frequency: 3500000000 Hz
+Package thermal spec power: 84 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt; 
+
+Detected Intel(R) Xeon(R) CPU E3-1275 v3 @ 3.50GHz "Intel(r) microarchitecture codename Haswell"
+Update every 0 seconds
+
+ Executing "bayes/bayes.rtm -v32 -r4096 -n10 -p40 -i2 -e2 -s1 -t8" command:
+
+Random seed                = 1
+Number of vars             = 32
+Number of records          = 4096
+Max num parents            = 10
+% chance of parent         = 40
+Insert penalty             = 2
+Max num edge learned / var = 2
+Operation quality factor   = 1.000000
+Generating data... done.
+Generating adtree... done.
+Adtree time = 10.279138
+Learning structure...done.
+Learn time = 0.040740
+Learn score  = -70661.414062
+Actual score = -64654.265625
+Exit code: 0
+
+Time elapsed: 12102 ms
+Event0: RTM_RETIRED.ABORTED Number of times an RTM execution aborted due to any reasons (multiple categories may count as one) (raw 0x4c9)
+Event1: TX_MEM.ABORT_CONFLICT Number of times a transactional abort was signaled due to a data conflict on a transactionally accessed address (raw 0x154)
+Event2: TX_MEM.ABORT_CAPACITY_WRITE Number of times a transactional abort was signaled due to limited resources for transactional stores (raw 0x254)
+
+Core,Event0,Event1,Event2,Event3
+0,304,87,74,0,
+1,122,61,29,0,
+2,0,0,0,0,
+3,168,72,28,0,
+4,303,119,77,0,
+5,147,65,32,0,
+6,153,68,19,0,
+7,178,71,41,0,
+*,1375,543,300,0,
+
+Cleaning up
